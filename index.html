@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>PASSWORD GENERATOR</h1>
+
+    <main class="container-input">
+        <span>Size <span id="valor"></span> Char</span>
+        <input id="slider" class="slider" type="range" min="6" max="40" value="20" />
+
+        <button id="button" class="button-cta" onclick="generatePassword()">CREATE YOUR NEW PASSWORD</button>
+    </main>
+
+    <div id="container-password" onclick="copyPass()" class="container-password hide">
+        <span class="tittle">Your Password has been generate</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">☝🏻Click to copy👆🏻.</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
